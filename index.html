@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <style>
+        .bg-green {
+            background-color: #0aad0a !important;
+        }
+
+        .text-green {
+            color: #0aad0a !important;
+        }
+
+        .btn-green {
+            background-color: #0aad0a !important;
+            border: 1px solid #0aad0a !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-3 border-bottom">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="input-group">
+                    <select name="category" id="category" class="form-control">
+                        <option value="">All Categories</option>
+                    </select>
+                    <input type="text" placeholder="Search for products" class="form-control">
+                    <button class="btn btn-light"><i class="fa fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <button class="btn btn-light"><i class="fa fa-location-dot"></i> Pick Location</button>
+            </div>
+            <div class="col-md-2 d-flex justify-content-end">
+                <button class="btn"><i class="fa fa-heart"></i></button>
+                <button class="btn"><i class="fa fa-user"></i></button>
+                <button class="btn"><i class="fa fa-box-archive"></i></button>
+
+            </div>
+        </div>
+    </header>
+    <header class="p-3 mb-3 border-bottom bg-green">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-light"><i class="fa fa-table-cells-large"></i> All
+                        Departments</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Shop</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Stores</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Mega menu</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Pages</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Account</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Dashboard</a></li>
+                <li><a href="#" class="nav-link px-2 text-light">Docs</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row my-3">
+            <div class="col m-md-3">
+                <div class="row rounded" style="background-color: #f0f3f2;">
+                    <div class="col-md-3 d-flex align-items-center justify-content-center">
+                        <img src="./images/shoping_cart.png" class="w-50">
+                    </div>
+                    <div class="col-md-6 d-flex align-items-center">
+                        <div>
+                            <h3>Welcome!</h3>
+                            <small>Download the app get free food & <span class="text-green">30%</span> off on your
+                                first
+                                order</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 d-flex align-items-center">
+                        <button class="btn btn-dark">Download FreshCart App</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-4">
+                <div class="rounded p-4 mt-3 mt-md-0" style="background-color: #dcebff; background-image: url('./images/personal_care.png'); background-repeat: no-repeat;
+                    background-size: 50%;
+                    background-position: right bottom;">
+                    <h3 class="fs-2 fw-bolder">10% cashback on personal care</h3>
+                    <div class="fs-4 text-muted mt-3">Max cashback: $12</div>
+                    <div class="fs-4 text-muted">Code: <span class="text-dark fw-bold">CARE12</span></div>
+                    <div class="pt-3">
+                        <button class="btn btn-dark">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="rounded p-4 mt-3 mt-md-0" style="background-color: #ffe598; background-image: url('./images/fresh_fruits.png'); background-repeat: no-repeat;
+                    background-size: 60%;
+                    background-position: right bottom;">
+                    <h3 class="fs-2 fw-bolder">Say yes to <br> season's fresh</h3>
+                    <div class="fs-4 text-muted mt-3">Refresh your day <br> the fruity way</div>
+                    <div class="pt-3">
+                        <button class="btn btn-dark">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="ounded p-4 mt-3 mt-md-0" style="background-color: #dcf1f4; background-image: url('./images/ice_cream.png'); background-repeat: no-repeat;
+                    background-size: 40%;
+                    background-position: right bottom;">
+                    <h3 class="fs-2 fw-bolder">When in doubt, <br> eat ice cream</h3>
+                    <div class="fs-4 text-muted mt-3">Enjoy a scoop of <br>
+                        summer today</div>
+                    <div class="pt-3">
+                        <button class="btn btn-dark">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex align-items-stretch">
+            <div class="col-12 my-3">
+                <h2>Shop by Category</h2>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img1.png" class="w-100">
+                        <div class="text-center w-100 ">Dairy, Bread & Eggs</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img2.png" class="w-100">
+                        <div class="text-center w-100 ">Snack & Munchies</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img3.png" class="w-100">
+                        <div class="text-center w-100 ">Bakery & Biscuits</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img4.png" class="w-100">
+                        <div class="text-center w-100 ">Instant Food</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img5.png" class="w-100">
+                        <div class="text-center w-100 ">Tea, Coffee & Drinks</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img6.png" class="w-100">
+                        <div class="text-center w-100 ">Fruits & Vegetables</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img7.png" class="w-100">
+                        <div class="text-center w-100 ">Cold Drinks & Juices</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img8.png" class="w-100">
+                        <div class="text-center w-100 ">Chicken, Meat & Fish</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img9.png" class="w-100">
+                        <div class="text-center w-100 ">Baby Care</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img10.png" class="w-100">
+                        <div class="text-center w-100 ">Cleaning Essentials</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img11.png" class="w-100">
+                        <div class="text-center w-100 ">Pet Care</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 my-3">
+                <div class="card h-100">
+                    <div class="card-body d-flex align-content-around flex-wrap">
+                        <img src="./images/products/img12.png" class="w-100">
+                        <div class="text-center w-100 ">Atta, Rice & Dal</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 my-3">
+                <h2>Fruits & vegetables</h2>
+                <h5 class="text-muted">eat fresh, stay healthy</h5>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="./images/fruit_veg/img1.png">
+                        <div class="text-muted"><small>Fruits & vegetables</small></div>
+                        <h5>Beatroot</h5>
+                        <div>
+                            <div class="d-inline" style="color: #ffc107;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-stroke"></i>
+                            </div>
+                            <div class="d-inline">
+                                4.5 (39)
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-6 fs-5 fw-bold">
+                                $18
+                                <del class="text-muted">
+                                    $24
+                                </del>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-green float-end">
+                                    <i class="fa fa-plus"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-100" src="./images/fruit_veg/img2.png">
+                        <div class="text-muted"><small>Fruits & vegetables</small></div>
+                        <h5>Fresh Apple</h5>
+                        <div>
+                            <div class="d-inline" style="color: #ffc107;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-stroke"></i>
+                            </div>
+                            <div class="d-inline">
+                                4.5 (149)
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-6 fs-5 fw-bold">
+                                $24
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-green float-end">
+                                    <i class="fa fa-plus"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-100" src="./images/fruit_veg/img3.png">
+                        <div class="text-muted"><small>Fruits & vegetables</small></div>
+                        <h5>Golden Pineapple</h5>
+                        <div>
+                            <div class="d-inline" style="color: #ffc107;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-stroke"></i>
+                            </div>
+                            <div class="d-inline">
+                                4.5 (25)
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-6 fs-5 fw-bold">
+                                $32
+                                <del class="text-muted">
+                                    $35
+                                </del>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-green float-end">
+                                    <i class="fa fa-plus"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-100" src="./images/fruit_veg/img4.png">
+                        <div class="text-muted"><small>Fruits & vegetables</small></div>
+                        <h5>Fresh Kiwi</h5>
+                        <div>
+                            <div class="d-inline" style="color: #ffc107;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="d-inline">
+                                5 (469)
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-6 fs-5 fw-bold">
+                                $3
+                                <del class="text-muted">
+                                    $5
+                                </del>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-green float-end">
+                                    <i class="fa fa-plus"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="w-100" src="./images/fruit_veg/img5.png">
+                        <div class="text-muted"><small>Fruits & vegetables</small></div>
+                        <h5>Fresh Banana</h5>
+                        <div>
+                            <div class="d-inline" style="color: #ffc107;">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-stroke"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="d-inline">
+                                3.5 (456)
+                            </div>
+                        </div>
+                        <div class="row pt-3">
+                            <div class="col-md-6 fs-5 fw-bold">
+                                $13
+                                <del class="text-muted">
+                                    $18
+                                </del>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-green float-end">
+                                    <i class="fa fa-plus"></i>
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-end">
+                <img src="./images/fresh_cart_app.png">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h2 class="fw-bold">Get the FreshCart app</h2>
+                    <span class="text-muted">We will send you a link, open it on your phone to download the app.</span>
+                    <div>
+                        <input type="radio" id="emailr">
+                        <label for="emailr">Email</label>
+                        <input type="radio" id="phoner" checked>
+                        <label for="phoner">Phone</label>
+                        <div class="row">
+                            <div class="col-md-8 pe-0">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="col-md-4 ps-0">
+                                <button class="btn btn-primary btn-green float-end">
+                                    Share app link
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="text-muted">Download app from</span>
+                    <div class="row">
+                        <div class="col-md-8 d-flex">
+                            <img src="./images/app_store.png" style="width: 160px;">
+                            <img src="./images/play_store.png" style="width: 160px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="row my-4">
+            <div class="col-md-3">
+                <div class="py-3">
+                    <i class="text-green far fa-clock" style="font-size: 50px;"></i>
+                </div>
+                <h3 class="py-3">
+                    10 minute grocery now
+                </h3>
+                <span class="text-muted">
+                    Get your order delivered to your doorstep at
+                    the earliest from pickup stores
+                    near you.
+                </span>
+            </div>
+            <div class="col-md-3">
+                <div class="py-3">
+                    <i class="text-green fa fa-gift" style="font-size: 50px;"></i>
+                </div>
+                <h3 class="py-3">
+                    Best Prices & Offers
+                </h3>
+                <span class="text-muted">
+                    Cheaper prices than your local supermarket,
+                    great cashback offers to top it off. Get best
+                    pricess & offers.
+                </span>
+            </div>
+            <div class="col-md-3">
+                <div class="py-3">
+                    <i class="text-green fa fa-box" style="font-size: 50px;"></i>
+                </div>
+                <h3 class="py-3">
+                    Wide Assortment
+                </h3>
+                <span class="text-muted">
+                    Choose from 5000+ products across food,
+                    personal care, household, bakery, veg and
+                    non-veg & other categories.
+                </span>
+            </div>
+            <div class="col-md-3">
+                <div class="py-3">
+                    <i class="text-green fa fa-arrows-rotate" style="font-size: 50px;"></i>
+                </div>
+                <h3 class="py-3">
+                    Easy Returns
+                </h3>
+                <span class="text-muted">
+                    Not satisfied with a product? Return it at the
+                    doorstep & get a refund within hours. No
+                    questions asked policy.
+                </span>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #f0f3f2;">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-2">
+                    <div class="mb-2 fw-bold">Categories</div>
+                    <div class="text-muted py-1">Vegetables & Fruits</div>
+                    <div class="text-muted py-1">Breakfast & instant food</div>
+                    <div class="text-muted py-1">Bakery & Biscuits</div>
+                    <div class="text-muted py-1">Atta, rice & dal</div>
+                    <div class="text-muted py-1">Sauces & spreads</div>
+                    <div class="text-muted py-1">Organic & gourmet</div>
+                    <div class="text-muted py-1">Baby care</div>
+                    <div class="text-muted py-1">Cleaning essentials</div>
+                    <div class="text-muted py-1">Personal care</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="mb-2 fw-bold">&nbsp;</div>
+                    <div class="text-muted py-1">Dairy, bread & eggs</div>
+                    <div class="text-muted py-1">Cold drinks & juices</div>
+                    <div class="text-muted py-1">Tea, coffee & drinks</div>
+                    <div class="text-muted py-1">Masala, oil & more</div>
+                    <div class="text-muted py-1">Chicken, meat & fish</div>
+                    <div class="text-muted py-1">Paan corner</div>
+                    <div class="text-muted py-1">Pharma & wellness</div>
+                    <div class="text-muted py-1">Home & office</div>
+                    <div class="text-muted py-1">Pet care</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="mb-2 fw-bold">Get to know us</div>
+                    <div class="text-muted py-1">Company</div>
+                    <div class="text-muted py-1">About</div>
+                    <div class="text-muted py-1">Blog</div>
+                    <div class="text-muted py-1">Help Center</div>
+                    <div class="text-muted py-1">Our Value</div>
+                    <div class="my-2 fw-bold">Freshcart programs</div>
+                    <div class="text-muted py-1">Freshcart programs</div>
+                    <div class="text-muted py-1">Gift Cards</div>
+                    <div class="text-muted py-1">Promos & Coupons</div>
+                    <div class="text-muted py-1">Freshcart Ads</div>
+                    <div class="text-muted py-1">Careers</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="mb-2 fw-bold">For Consumers</div>
+                    <div class="text-muted py-1">Payments</div>
+                    <div class="text-muted py-1">Shipping</div>
+                    <div class="text-muted py-1">Product Returns</div>
+                    <div class="text-muted py-1">FAQ</div>
+                    <div class="text-muted py-1">Shop Checkout</div>
+                </div>
+                <div class="col-md-2">
+                    <div class="mb-2 fw-bold">Become a Shopper</div>
+                    <div class="text-muted py-1">Shopper Opportunities</div>
+                    <div class="text-muted py-1">Become a Shopper</div>
+                    <div class="text-muted py-1">Earnings</div>
+                    <div class="text-muted py-1">Ideas & Guides</div>
+                    <div class="text-muted py-1">New Retailers</div>
+                </div>
+            </div>
+            <hr class="py-2">
+            <div class="row">
+                <div class="col-md-4 d-flex">
+                    <div class="row">
+                        <div class="d-flex col-md-4 justify-content-center align-items-center">
+                            Payment Partners
+                        </div>
+                        <div class="col-md-8"><img src="./images/payment_partners.png" class="d-inline w-100"></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="d-flex col-md-4 justify-content-center align-items-center fw-bold">
+                            Get deliveries with FreshCart
+                        </div>
+                        <div class="col-md-8 d-flex">
+                            <img src="./images/app_store.png" style="width: 160px;">
+                            <img src="./images/play_store.png" style="width: 160px;">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="pt-2">
+            <div class="row text-muted small pb-3">
+                <div class="col-md-6">
+                    &copy; 2023. All rights reserved.
+                </div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <span class="d-flex align-items-center px-3">Follow us on</span>
+                    <i class="fab fa-facebook p-2 fs-5"></i>
+                    <i class="fab fa-twitter p-2 fs-5"></i>
+                    <i class="fab fa-instagram p-2 fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
